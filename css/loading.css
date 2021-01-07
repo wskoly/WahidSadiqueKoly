@@ -1,6 +1,6 @@
  #loading {
-  width: 100%;
-  height: 100%;
+  width: 100vw;
+  height: 100vh;
   top: 0;
   left: 0;
   position: fixed;
@@ -8,7 +8,6 @@
   opacity: 1;
   background-color: #e4e7f0;
   z-index: 99;
-  text-align: center;
 }
 
 #loading-image {
@@ -21,10 +20,8 @@
 }
 #loading-limage {
   position: absolute;
-  top: 46%;
+  top: 47%;
   left: 44%;
-  bottom: 46%;
-  right: 40%
   z-index: 100;
 }
 .loading {
