@@ -11,18 +11,20 @@
 }
 
 #loading-image {
-  position: absolute;
-  top: 42%;
-  left: 42%;
-  bottom: 42%;
-  right: 42%;
-  z-index: 100;
+  position: relative;
+  width: 100%
+  height: 3rem;
+  top: calc(50% - 1.5rem);
+  text-align: center;
+  margin: 0 auto;
 }
 #loading-limage {
-  position: absolute;
-  top: 47%;
-  left: 44%;
-  z-index: 100;
+  position: relative;
+  width: 100%
+  height: 3rem;
+  top: calc(50% - 13rem);
+  text-align: center;
+  margin: 0 auto;
 }
 .loading {
   width: 15em;
