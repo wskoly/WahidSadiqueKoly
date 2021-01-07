@@ -70,8 +70,8 @@
 .loader-image a:before {
   content: "";
   border-radius: 50%;
-  height: 160px;
-  width: 160px;
+  height: 158px;
+  width: 158px;
   position: absolute;
   -webkit-animation: pulsate 1.6s ease-out;
           animation: pulsate 1.6s ease-out;
@@ -83,8 +83,8 @@
 .loader-image img {
   position: relative;
   border-radius: 50%;
-  height: 160px;
-  width: 160px;
+  height: 158px;
+  width: 158px;
   margin: 0;
   border: 15px solid transparent;
   z-index: 9999;
