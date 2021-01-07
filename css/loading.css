@@ -15,12 +15,16 @@
   position: absolute;
   top: 42%;
   left: 42%;
+  bottom: 42%;
+  right: 42%;
   z-index: 100;
 }
 #loading-limage {
   position: absolute;
   top: 46%;
   left: 44%;
+  bottom: 46%;
+  right: 44%;
   z-index: 100;
 }
 .loading {
