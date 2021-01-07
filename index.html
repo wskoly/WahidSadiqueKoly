@@ -12,11 +12,20 @@
     <meta name="description" content="Portfolio of Wahid Sadique Koly"/>
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,200" rel="stylesheet">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     <link href="css/aos.css" rel="stylesheet">
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="styles/main.css" rel="stylesheet">
+    <link href="css/loading.css" rel="stylesheet">
   </head>
   <body id="top">
+    <div id="loading">
+      <div id="loading-image" class="loading">
+        <div class="loader"></div>
+      </div>
+      <div id="loading-limage" class="loader-image"><a href="#"><img src="images/koly.png" alt="Image"/></a></div>
+      <!--<img id="loading-image" src="https://media.giphy.com/media/xTk9ZvMnbIiIew7IpW/source.gif" alt="Loading..." /> -->
+    </div>
     <header>
       <div class="profile-page sidebar-collapse">
         <nav class="navbar navbar-expand-lg fixed-top navbar-transparent bg-primary" color-on-scroll="400">
@@ -56,7 +65,7 @@
       </div>
       <div class="section">
         <div class="container">
-          <div class="button-container"><a class="btn btn-default btn-round btn-lg btn-icon" href="https://www.facebook.com/wskoly" rel="tooltip" title="My facebook profile"><i class="fa fa-facebook"></i></a><a class="btn btn-default btn-round btn-lg btn-icon" href="https://github.com/wskoly" rel="tooltip" title="My github profile"><i class="fa fa-github"></i></a><a class="btn btn-default btn-round btn-lg btn-icon" href="https://www.linkedin.com/in/wskoly" rel="tooltip" title="My linkedin profile"><i class="fa fa-linkedin"></i></a><a class="btn btn-default btn-round btn-lg btn-icon" href="https://www.instagram.com/wskoly/" rel="tooltip" title="My Instagram Profile"><i class="fa fa-instagram"></i></a></div>
+          <div class="button-container"><a class="btn btn-default btn-round btn-lg btn-icon" href="https://www.facebook.com/wskoly" rel="tooltip" title="My facebook profile"><i class="fa fa-facebook"></i></a><a class="btn btn-default btn-round btn-lg btn-icon" href="https://github.com/wskoly" rel="tooltip" title="My github profile"><i class="fa fa-github"></i></a><a class="btn btn-default btn-round btn-lg btn-icon" href="https://www.linkedin.com/in/wskoly" rel="tooltip" title="My linkedin profile"><i class="fa fa-linkedin"></i></a><a class="btn btn-default btn-round btn-lg btn-icon" href="https://www.hackerrank.com/wskoly/" rel="tooltip" title="My Hacker Rank profile"><img src="images/hacker_white.png" style="margin-top:33%;  height: 40%;"></a></div>
         </div>
       </div>
     </div>
@@ -666,6 +675,17 @@
       <div class="container text-center"><a class="cc-facebook btn btn-link" href="https://www.facebook.com/wskoly"><i class="fa fa-facebook fa-2x " aria-hidden="true"></i></a><a class="cc-twitter btn btn-link " href="https://github.com/wskoly"><i class="fa fa-github fa-2x " aria-hidden="true"></i></a><a class="cc-google-plus btn btn-link" href="https://www.linkedin.com/in/wskoly"><i class="fa fa-linkedin fa-2x" aria-hidden="true"></i></a><a class="cc-instagram btn btn-link" href="https://www.instagram.com/wskoly/"><i class="fa fa-instagram fa-2x " aria-hidden="true"></i></a></div>
       <div class="h4 title text-center">Wahid Sadique Koly</div>
     </footer>
+    <script>
+        $(window).on('load', function(){
+              setTimeout(removeLoader, 2000); //wait for page load PLUS two seconds.
+          });
+        function removeLoader(){
+              $( "#loading" ).fadeOut(500, function() {
+              var koly = document.getElementById("loading");
+              koly.remove(); //makes page more lightweight 
+              });  
+          }
+    </script>
     <script src="js/core/jquery.3.2.1.min.js"></script>
     <script src="js/core/popper.min.js"></script>
     <script src="js/core/bootstrap.min.js"></script>
