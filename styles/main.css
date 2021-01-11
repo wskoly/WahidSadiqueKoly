@@ -7272,4 +7272,18 @@ a.credit {
 /* Common Style */
 .section {
   padding-bottom: 0;
+  background: linear-gradient(-90deg, #ffffff, #67B26F, #4ca2cd, #3494E6, #EC6EAD, #C5796D, #DBE6F6, #DCE35B, #45B649, #4568DC, #B06AB3, #6190E8, #A7BFE8, #FFD200, #F7971E, #FF8235, #30E8BF, #ffffff);
+  background-size: 400% 400%;
+  animation: gradient 30s ease infinite;
+}
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }

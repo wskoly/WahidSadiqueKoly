@@ -47,9 +47,9 @@
   border-radius: 50%;
   z-index: -1;
   filter: blur(20px);
-  animation: animate 500ms linear infinite;
+  animation: koly 500ms linear infinite;
 }
-@keyframes animate {
+@keyframes koly {
   from {
     transform: rotate(0deg);
   }
