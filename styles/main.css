@@ -7272,9 +7272,11 @@ a.credit {
 /* Common Style */
 .section {
   padding-bottom: 0;
-  background: linear-gradient(-90deg, #ffffff, #67B26F, #4ca2cd, #3494E6, #EC6EAD, #C5796D, #DBE6F6, #DCE35B, #45B649, #4568DC, #B06AB3, #6190E8, #A7BFE8, #FFD200, #F7971E, #FF8235, #30E8BF, #ffffff);
+ /* background: linear-gradient(-90deg, #ffffff, #67B26F, #4ca2cd, #3494E6, #EC6EAD, #C5796D, #DBE6F6, #DCE35B, #45B649, #4568DC, #B06AB3, #6190E8, #A7BFE8, #FFD200, #F7971E, #FF8235, #30E8BF, #ffffff);
+  background: linear-gradient(-90deg, #ffffff, #e6e6e6, #c9caca, #919191, #747373, #414141, #5b5c5c, #949494, #e4e3e3, #ffffff);*/
+  background: linear-gradient(-90deg,#fc466b,#3f5efb,#159957,#30e8bf, #ff8235);
   background-size: 400% 400%;
-  animation: gradient 30s ease infinite;
+  animation: gradient 15s ease infinite;
 }
 @keyframes gradient {
   0% {
